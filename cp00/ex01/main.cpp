@@ -45,7 +45,7 @@ void    search(Contact book[8], int contact_nb)
 	if (index >= 0 && index < contact_nb)
 		book[index].printAll();
 	else
-		std::cout << "This index does not exist." << std::endl;
+		std::cout << "This index does not exist." << std::endl << "> ADD, SEARCH or EXIT ?" << std::endl;
 }
 
 int main()
