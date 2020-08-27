@@ -1,4 +1,4 @@
-SRCS			= contact.cpp main.cpp
+SRCS			= contact.cpp
 OBJS			= $(SRCS:.cpp=.o)
 
 CXX				= clang++

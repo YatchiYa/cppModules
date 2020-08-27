@@ -13,7 +13,7 @@ int     main(int argc, char const *argv[])
         while (i < argc)
         {
             std::string str(argv[i]);
-            unsigned long j = 0;
+            int j = 0;
             while (j < str.length())
             {
                 std::cout << (char)std::toupper(str[j]);

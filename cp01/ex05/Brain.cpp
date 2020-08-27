@@ -15,7 +15,7 @@ std::string Brain::identifier(void) const
 	std::string	str;
 	std::stringstream ss;
 
-	adr = (unsigned long)this;
+	adr = (unsigned int)this;
 	ss << "0x" << std::uppercase << std::hex << adr;
 	str = ss.str();
 	return (str);
