@@ -2,7 +2,6 @@
 #include <iostream>
 #include "FragTrap.hpp"
 #include "ScavTrap.hpp"
-#include "ClapTrap.hpp"
 #include "NinjaTrap.hpp"
 
 int main(void)
@@ -60,6 +59,7 @@ int main(void)
 	ninja->ninjaShoebox(*scav);
 	ninja->ninjaShoebox(*scav);
 	ninja->ninjaShoebox(clap);
+
 
 	std::cout << "---" << std::endl;
 

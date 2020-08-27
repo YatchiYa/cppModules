@@ -27,7 +27,7 @@ FragTrap::FragTrap(FragTrap const &other) :
 
 FragTrap::~FragTrap()
 {
-	std::cout << this->name << ": Argh arghargh death gurgle gurglegurgle urgh... death." << std::endl;
+	std::cout << this->name << ": is... death." << std::endl;
 }
 
 FragTrap &FragTrap::operator=(FragTrap const &other)
