@@ -33,10 +33,9 @@ void	Zombie::advert(void)
 
 std::string		Zombie::randName(void)
 {
-	int							n;
-	std::vector<std::string>	tab;
+	const std::string tab[] = {
+    "ZOZO", "KOKO", "TOTO", "MORBIDE", "ZIGS",
+    };
 
-	tab = { "ZOZO", "KOKO", "TOTO", "MORBIDE", "ZIGS" };
-	n = std::rand() % (tab.size() - 1);
-	return (tab[n]);
+	return (tab[rand() % 5]);
 }

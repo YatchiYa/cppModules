@@ -1,6 +1,17 @@
 
 #include "Zombie.hpp"
 
+const std::string NAMES[] = {
+    "John", "Jack", "Jerry", "Jeremy", "Jessica",
+    "James Dean", "July", "Steven", "Carrot", 
+    "Cauliflower",
+    };
+
+std::string getRandomName()
+{
+    return (NAMES[rand() % 10]);
+}
+
 Zombie::Zombie()
 {
 	this->name = std::string();

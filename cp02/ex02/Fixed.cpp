@@ -6,6 +6,9 @@ Fixed::Fixed()
 	this->value = 0;
 }
 
+// a << Fixed::bits = a x 2^Fixed::bits
+// 1 << Fixed::bits = 1 x 2^Fixed::bits = 256
+// a >> Fixed::bits = a / 2^Fixed::bits
 Fixed::Fixed(int const value)
 {
 	this->value = (value << Fixed::bits);

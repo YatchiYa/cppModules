@@ -25,13 +25,12 @@ Zombie	*ZombieEvent::newZombie(std::string str)
 Zombie *ZombieEvent::randomChump(void)
 {
 	Zombie	*zombie;
-	int		n;
-	std::vector<std::string>	tab;
+	
+	const std::string tab[] = {
+    "ZOZO", "KOKO", "TOTO", "MORBIDE", "ZIGS",
+    };
 
-	tab = {"ZOZO", "KOKO", "TOTO", "MORBIDE", "ZIGS"};
-	n = std::rand() % (tab.size() - 1);
-
-	zombie = new Zombie(tab[n], this->type);
+	zombie = new Zombie(tab[rand() % 5], this->type);
 	zombie->advert();
 	return (zombie);
 }
