@@ -1,6 +1,11 @@
 
 #include "serial.hpp"
 
+/* Reinterpret cast : instructs the compiler to treat expression as if it had the type new_type.
+Dans cet exercice, on ne peut pas utiliser static_cast car un int * est un pointeur sur 4-byte, et un char *
+un pointeur sur un seul. Static_cast emp�cherait ce type de cast � la compilation.
+Or on veut ecrire un int sur 4 byte entre deux suites de char d'un byte qu'on write un par un. */
+
 void *serialize(void)
 {
 	static std::string alphabet = "0123456789" \

@@ -64,8 +64,8 @@ void Sed::convFloat(std::string arg)
 	{
 		std::cout << "char: impossible" << std::endl;
 		std::cout << "int: impossible" << std::endl;
-		std::cout << "float: " << std::fixed << std::setprecision(get_precision(arg)) << f << "f" << std::endl;
-		std::cout << "double: " << std::fixed << std::setprecision(get_precision(arg)) << d << std::endl;
+		std::cout << "float: " << std::fixed << std::setprecision(get_precision(arg) - 1) << f << "f" << std::endl;
+		std::cout << "double: " << std::fixed << std::setprecision(get_precision(arg) - 1) << d << std::endl;
 		return;
 	}
 	if (isprint(c))
@@ -73,8 +73,8 @@ void Sed::convFloat(std::string arg)
 	else
 		std::cout << "char: Non displayable" << std::endl;
 	std::cout << "int: " << i << std::endl;
-	std::cout << "float: " << std::fixed << std::setprecision(get_precision(arg)) << f << "f" << std::endl;
-	std::cout << "double: " << std::fixed << std::setprecision(get_precision(arg)) << d << std::endl;
+	std::cout << "float: " << std::fixed << std::setprecision(get_precision(arg) - 1) << f << "f" << std::endl;
+	std::cout << "double: " << std::fixed << std::setprecision(get_precision(arg) - 1) << d << std::endl;
 }
 
 bool Sed::isDouble(std::string arg)
